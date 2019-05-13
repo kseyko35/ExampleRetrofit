@@ -107,7 +107,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
         userPhoto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -163,7 +162,7 @@ public class MainActivity extends AppCompatActivity {
                             if(nameEdit.getText().toString()!="" && surnameEdit.getText().toString()!=""&& downloadUrl.toString()!="") {
                                 dat = new DataModel(nameEdit.getText().toString(), surnameEdit.getText().toString(), downloadUrl.toString(), imageName);
                             }
-                            else Toast.makeText(context,"Please fill all text", Toast.LENGTH_SHORT).show();
+                            else Toast.makeText(context," fill all text", Toast.LENGTH_SHORT).show();
                         }
                     });
 
