@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ExampleRetrofit</string>
+    <string name="hint_name">Name</string>
+    <string name="surname">Surname</string>
+</resources>

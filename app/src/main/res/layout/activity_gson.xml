@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GsonActivity">
+
+
+    <Button
+        android:id="@+id/gsonSetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="170dp"
+        android:text="Set" />
+
+    <Button
+        android:id="@+id/genericGetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/gsonSetButton"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="93dp"
+        android:layout_toEndOf="@+id/gsonSetButton"
+        android:text="Generic Get" />
+
+    <Button
+        android:id="@+id/genericSetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="261dp"
+        android:text="Generic Set" />
+
+    <Button
+        android:id="@+id/gsonGetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/gsonSetButton"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/gsonSetButton"
+        android:text="Get" />
+
+
+    <TextView
+        android:id="@+id/gsonTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-8dp"
+        android:layout_marginBottom="129dp"
+        android:layout_toEndOf="@+id/gsonSetButton"
+        android:text="Data ;"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+</RelativeLayout>

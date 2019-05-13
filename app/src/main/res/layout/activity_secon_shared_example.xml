@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SeconSharedExample"
+    android:id="@+id/MainLayout"
+    >
+
+    <LinearLayout
+        android:id="@+id/firstLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/getData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="Get Data" />
+
+        <Button
+            android:id="@+id/deleteData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="Delete Data" />
+
+        <Button
+            android:id="@+id/deleteWholeData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/firstLayout"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="Delete Whole Data" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/firstLayout"
+        android:id="@+id/secondLayout"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name : "
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginStart="80dp"
+            android:id="@+id/nameTextView2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:text="Surname : "
+            android:layout_marginStart="80dp"
+            android:id="@+id/surnameTextView2"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/secondLayout"
+        android:gravity="center">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/jobEdit"
+            android:hint="Enter your job"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/jobButton"
+            android:text="Enter"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/jobGet"
+            android:text="Get"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "551323117826",
+    "firebase_url": "https://retrofitexample-ce8a1.firebaseio.com",
+    "project_id": "retrofitexample-ce8a1",
+    "storage_bucket": "retrofitexample-ce8a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:551323117826:android:524001bdde9e9922",
+        "android_client_info": {
+          "package_name": "com.example.emrekacan.exampleretrofit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "551323117826-jjampf7kir0iilbl2ve5s4udnmp3bvhh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.emrekacan.exampleretrofit",
+            "certificate_hash": "a3ca90029c0769b0a66902b586ca753612264de8"
+          }
+        },
+        {
+          "client_id": "551323117826-2hg3u6iorfblcqpk90ag14difek3vrkd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqPIGpM0n38kC_Z1Gof-dyd7nb_mXQRFU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "551323117826-2hg3u6iorfblcqpk90ag14difek3vrkd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

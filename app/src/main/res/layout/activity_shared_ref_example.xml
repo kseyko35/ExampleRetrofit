@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SharedRefExample"
+    android:id="@+id/mainLayout">
+
+    <Switch
+        android:id="@+id/backgroundColorSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="54dp"
+        android:text="Background"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="163dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/nameEditBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="Enter your name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/surnameEditBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="Enter your surname"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonLinear"
+        android:layout_width="243dp"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="192dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="Get" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="Set" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/newActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonLinear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-192dp"
+        android:text="Another Activity" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newActivity"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="87dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/surnameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</RelativeLayout>
