@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.listButton) Button listButton;
     @BindView(R.id.createButton) Button createButton;
     @BindView(R.id.nameEdit)EditText nameEdit;
-    @BindView(R.id.surnameEdit)EditText surnameEdit;
+    @BindView(R.id.surnameEdit)EditText ;
 
 
 
