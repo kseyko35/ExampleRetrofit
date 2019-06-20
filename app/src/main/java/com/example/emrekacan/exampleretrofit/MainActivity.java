@@ -32,6 +32,7 @@ import com.google.firebase.storage.StorageTask;
 import com.google.firebase.storage.UploadTask;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.onesignal.OneSignal;
 import com.squareup.picasso.Picasso;
 
 import java.io.File;
@@ -65,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.listButton) Button listButton;
     @BindView(R.id.createButton) Button createButton;
     @BindView(R.id.nameEdit)EditText nameEdit;
-    @BindView(R.id.surnameEdit)EditText ;
+    @BindView(R.id.surnameEdit)EditText surnameEdit;
 
 
 
@@ -75,7 +76,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-
+        OneSignal.startInit(this)
+                .inFocusDisplaying(OneSignal.OSInFocusDisplayOption.Notification)
+                .unsubscribeWhenNotificationsAreDisabled(true)
+                .init();
 
 
  
